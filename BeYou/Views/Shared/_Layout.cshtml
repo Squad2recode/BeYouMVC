@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be You</title>
+    <link rel="shortcut icon" href="~/img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@100&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <section class="container-0">
+            <a asp-action="Index"><img class="logo" src="~/img/LOGO BEYOU.svg"></a>
+            <nav>
+                <div class="menu-0">
+                    <ul>
+                        <li>
+                            <a id="titulo">Empregabilidade</a>
+                            <ul>
+                                <li><a asp-action="vagasDeEmprego" asp-controller="Home">Vagas de Emprego</a></li>
+                                <li><a asp-action="capacitacaoECursos" asp-controller="Home">Capacitação / Cursos</a></li>
+                                <li><a asp-action="ondeProcurarVagas" asp-controller="Home">Onde procurar vagas?</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Acolhimento</a>
+                            <ul>
+                                <li><a asp-action="encontreUmaCasa" asp-controller="Home">Encontre uma casa de acolhimento &nbsp</a></li>
+                                <li><a asp-action="Create" asp-controller="casasAcolhimentoes">Indique uma casa de acolhimento</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a id="titulo">Sobre nós</a>
+                            <ul>
+                                <li><a asp-action="Create" asp-controller="cadastroParceiros">Seja um parceiro</a></li>
+                                <li><a asp-action="Create" asp-controller="cadastroVoluntarios">Seja um voluntário</a></li>
+                                <li><a asp-action="missaoVisaoValores" asp-controller="Home">Missão, visão e valores</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="titulo">Informações</a>
+                            <ul>
+                                <li><a asp-action="informacoesLegais" asp-controller="Home">Informações legais</a></li>
+                                <li><a asp-action="dadosImportantes" asp-controller="Home">Dados importantes</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <a id="titulo">&nbsp Doações &nbsp</a>
+                            <ul>
+                                <li><a asp-action="doeParaUmaOng" asp-controller="Home">Doe para uma ong</a></li>
+                                <li><a asp-action="mudeUmNome" asp-controller="Home">Mude um nome transforme <br> uma vida</a></li>
+                                <li><a href="/HTML/outraFormaDeAjudar.html">Outra forma de ajudar</a></li> 
+                            </ul>
+                        </li>ABA FUTURA -->
+                        <li>
+                            <a id="titulo">&nbsp &nbsp admin &nbsp &nbsp</a>
+                            <ul>
+                                <li><a asp-action="Create" asp-controller="cadastroVagasEmpregoes">Cadastrar vaga de emprego</a></li>
+                                <li><a asp-action="Create" asp-controller="cadastroCursos">Cadastrar curso</a></li>
+                                <li><a asp-action="verCasasIndicadas" asp-controller="Home">Ver casas indicadas</a></li>
+                                <li>
+                                    <a asp-action="verCandidatosVoluntarios" asp-controller="Home">Ver candidatos voluntários</a>
+                                </li>
+                                <li><a asp-action="verCandidatosParceiros" asp-controller="Home">Ver candidatos parceiros</a></li>
+                                <li><a asp-action="verCursosIndicados" asp-controller="Home">Ver cursos indicados</a></li>
+                                <li><a asp-action="verVagasDeEmprego" asp-controller="Home">Ver vagas de emprego indicados</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div id="menu-mobile">
+
+                    <a href="#" class="menu-open">
+                        <div id="linha"></div>
+                        <div id="linha2"></div>
+                        <div id="linha3"></div>
+                    </a>
+
+                    <div class="overlay"></div>
+
+                    <div class="menu">
+                        <a href="#" class="menu-close">&times;</a>
+                        <ul>
+                            <li>
+                                <a id="titulo">Empregabilidade</a>
+                                <ul>
+                                    <li><a asp-action="vagasDeEmprego" asp-controller="Home">Vagas de Emprego</a></li>
+                                    <li><a asp-action="capacitacaoECursos" asp-controller="Home">Capacitação / Cursos</a></li>
+                                    <li><a asp-action="ondeProcurarVagas" asp-controller="Home">Onde procurar vagas?</a></li>
+                                </ul>
+                            </li>
+                            <li><a asp-action="acolhimento" asp-controller="Home">Acolhimento</a></li>
+
+                            <li>
+                                <a id="titulo">Sobre nós</a>
+                                <ul>
+                                    <li><a asp-action="Create" asp-controller="cadastroParceiros">Seja um parceiro</a></li>
+                                    <li><a asp-action="Create" asp-controller="cadastroVoluntarios">Seja um voluntário</a></li>
+                                    <li><a asp-action="missaoVisaoValores" asp-controller="Home">Missão, visão e valores</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="titulo">Informações</a>
+                                <ul>
+                                    <li><a asp-action="informacoesLegais" asp-controller="Home">Informações legais</a></li>
+                                    <li><a asp-action="dadosImportantes" asp-controller="Home">Dados importantes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="titulo">&nbsp Doações &nbsp</a>
+                                <ul>
+                                    <li><a asp-action="doeParaUmaOng" asp-controller="Home">Doe para uma ong</a></li>
+                                    <li><a asp-action="mudeUmNome" asp-controller="Home">Mude um nome transforme <br> uma vida</a></li>
+                                    <!-- <li><a href="/HTML/outraFormaDeAjudar.html">Outra forma de ajudar</a></li> ABA FUTURA -->
+                                </ul>
+                            </li>
+                            <li>
+                                <a id="titulo">&nbsp &nbsp admin &nbsp &nbsp</a>
+                                <ul>
+                                    <li><a asp-action="Create" asp-controller="cadastroVagasEmpregoes">Cadastrar vaga de emprego</a></li>
+                                    <li><a asp-action="Create" asp-controller="cadastroCursos">Cadastrar curso </a></li>
+                                    <li><a asp-action="verCasasIndicadas" asp-controller="Home">Ver casas indicadas</a></li>
+                                    <li>
+                                        <a asp-action="verCandidatosVoluntarios" asp-controller="Home">Ver candidatos voluntários</a>
+                                    </li>
+                                    <li><a asp-action="verCandidatosParceiros" asp-controller="Home">Ver candidatos parceiros</a></li>
+                                    <li><a asp-action="verCursosIndicados" asp-controller="Home">Ver cursos indicados</a></li>
+                                    <li><a asp-action="verVagasDeEmprego" asp-controller="Home">Ver vagas de emprego indicados</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+    </header>
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <section class="container-5">
+            <div class="fim">
+                <div>
+                    <!-- <a href="#"><img src="~/img/whatsapp.svg"></a>
+                    <a href="#"><img src="~/img/instagram.svg"></a>
+                    <a href="#"><img src="~/img/facebook.svg"></a>
+                    <a href="#"><img src="~/img/youtube.svg"></a> -->
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="~/js/menu.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

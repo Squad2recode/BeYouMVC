@@ -1,0 +1,36 @@
+﻿@model BeYou.Models.cadastroVoluntarios
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/sejaUmVoluntario.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <secsion>
+        <h4 id="descricao">
+            Quer ser um voluntário? <br>Acha que suas experiências e vivências podem ser úteis? <br>É profissional de alguma areae tem ideias a compartilhar? entre em contato com a gente! Precisamos de você!
+        </h4>
+
+        <form class="dados" asp-action="Create" method="post">
+            <label htmlFor="nome">Nome</label>
+            <input asp-for="nome_voluntario" type="text" placeholder="Digite seu nome completo.." />
+
+            <label htmlFor="idade">Idade</label>
+            <input asp-for="idade" type="text" placeholder="Digite sua idade" />
+
+            <label htmlFor="email" id="email-0">E-mail</label>
+            <input asp-for="email" type="text" placeholder="Digite seu email.." />
+
+            <label htmlFor="phone" id="telefone-0">Telefone</label>
+            <input asp-for="telefone" type="text" placeholder="(DDD) Telefone" />
+
+            <label htmlFor="mensagem">Como gostaria de nos ajudar?</label>
+            <textarea asp-for="mensagem_voluntario" placeholder="Conte-nos um pouco sobre você e como poderia nos ajudar nessa jornada.." className="textArea"></textarea>
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </secsion>
+
+
+</body>

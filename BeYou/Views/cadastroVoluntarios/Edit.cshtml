@@ -1,0 +1,45 @@
+﻿@model BeYou.Models.cadastroVoluntarios
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/cadastre.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section>
+        <h2 id="descricao">
+            Editar
+        </h2>
+        <form class="dados" asp-action="Edit">
+            <label htmlFor="nome">Nome</label>
+            <input asp-for="nome_voluntario" type="text" placeholder="Digite seu nome completo.." />
+
+            <label htmlFor="idade">Idade</label>
+            <input asp-for="idade" type="text" placeholder="Digite sua idade" />
+
+            <label htmlFor="email" id="email-0">E-mail</label>
+            <input asp-for="email" type="text" placeholder="Digite seu email.." />
+
+            <label htmlFor="phone" id="telefone-0">Telefone</label>
+            <input asp-for="telefone" type="text" placeholder="(DDD) Telefone" />
+
+            <label htmlFor="mensagem">Como gostaria de nos ajudar?</label>
+            <textarea asp-for="mensagem_voluntario" placeholder="Conte-nos um pouco sobre você e como poderia nos ajudar nessa jornada.." className="textArea"></textarea>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+            <div>
+                <a asp-action="verCandidatosVoluntarios" asp-controller="Home">Voltar</a>
+            </div>
+        </form>
+
+    </section>
+</body>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

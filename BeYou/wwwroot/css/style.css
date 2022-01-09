@@ -1,0 +1,179 @@
+.menu ul li {
+  font-weight: bold;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 17%;
+  border-radius: 50px;
+}
+
+.titulo {
+  color: #000;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.banner-2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.banner-2 img {
+  align-items: center;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.banner-2 a {
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 140px;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  transition: all 0.5s ease;
+}
+
+.by-news {
+  color: #000;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 1%;
+}
+
+.container-3 {
+  align-items: center;
+}
+
+.noticias {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.carousel-item iframe {
+  width: 55vw;
+  height: 400px;
+}
+
+#ver-mais {
+  text-align: center;
+}
+
+.mvv {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+  margin-top: 15%;
+  width: 100%;
+}
+
+.mvv img {
+  align-items: center;
+  margin: 20px;
+}
+
+.mvv a {
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 500px) {
+
+  .container-1, .container-2, .container-3, .container-4 {
+    width: 90%;
+  }
+
+  .banner {
+    margin-top: 40%;
+  }
+
+  .banner img {
+    height: 20vh;
+  }
+
+  .banner-2 {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-2 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-item iframe {
+    width: 60vw;
+  }
+
+  .mvv {
+    display: inline;
+  }
+
+  .mvv img {
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: inset 0 0 1em #d3d2d2, 0 0 2em #38373752;
+  }
+
+  footer {
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .fim img {
+    width: 9vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 830px) {
+
+  section {
+    width: 90%;
+  }
+
+  .banner {
+    margin-top: 2%;
+  }
+
+  .banner-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-2 img {
+    height: auto;
+  }
+
+  .mvv {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mvv img {
+    align-items: center;
+  }
+
+  .mvv button {
+    width: auto;
+  }
+
+  footer {
+    margin-top: 10%;
+    width: 100%;
+  }
+}

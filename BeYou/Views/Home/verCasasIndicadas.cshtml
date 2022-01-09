@@ -1,0 +1,41 @@
+﻿@model IEnumerable<BeYou.Models.casasAcolhimento>
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/verCandidatos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Casa de Acolhimento</th>
+                    <th scope="col">Site</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Cidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.ID</th>
+                        <td>@item.nome_casa</td>
+                        <td><a href="@item.site">@item.site</a></td>
+                        <td>@item.estado</td>
+                        <td>@item.cidade</td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="casasAcolhimentoes" asp-route-id="@item.ID">EDITAR</a> ||
+                            <a asp-action="Delete" asp-controller="casasAcolhimentoes" asp-route-id="@item.ID">DELETAR</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </section>
+
+</body>

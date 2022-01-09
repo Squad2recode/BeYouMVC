@@ -1,0 +1,45 @@
+﻿@model BeYou.Models.cadastroParceiros
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/cadastre.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h2 id="descricao">
+            Editar
+        </h2>
+        <div>
+            <div>
+                <form class="dados" asp-action="Edit">
+                    <label htmlFor="nome">Nome</label>
+                    <input asp-for="nome_parceiro" type="text" placeholder="Digite seu nome ou o nome da empresa.." />
+
+                    <label htmlFor="email" id="email-0">E-mail</label>
+                    <input asp-for="email" type="text" placeholder="Digite seu email.." />
+
+                    <label htmlFor="phone" id="telefone-0">Telefone</label>
+                    <input asp-for="telefone" type="text" placeholder="(DDD) Telefone" />
+
+                    <label htmlFor="mensagem">Como gostaria de nos ajudar?</label>
+                    <textarea asp-for="mensagem_parceiro" placeholder="Diga-nos um pouco sobre suas ideias e aguarde nosso contato (Não demoraremos).." className="textArea"></textarea>
+                    <div>
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="verCadidatosParceiros" asp-controller="Home">Voltar</a>
+        </div>
+
+    </section>
+</body>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

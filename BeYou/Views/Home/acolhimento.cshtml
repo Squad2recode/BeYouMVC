@@ -1,0 +1,26 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/acolhimento.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <div class="opcoes">
+            <div>
+                <a asp-action="encontreUmaCasa">
+                    <img src="~/img/abrigo.jpeg" alt="Acolhimento" width="295px" height="281px" id="img-1">
+                    <button type="button" class="btn btn-secondary" style="height: 60px;" >Precisa de uma casa <br> de acolhimento</button>
+                </a>
+            </div>
+
+            <div>
+                <a asp-action="Create" asp-controller="casasAcolhimentoes">
+                    <img src="~/img/indiqueUmaCasa.jpg" alt="Projetos" width="295px" height="281px" id="img-2">
+                    <button type="button" class="btn btn-secondary" style="height: 60px;">Deseja indicar uma <br> casa de acolhimento</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>

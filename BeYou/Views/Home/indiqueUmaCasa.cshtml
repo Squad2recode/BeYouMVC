@@ -1,0 +1,32 @@
+﻿@model BeYou.Models.casasAcolhimento
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/indiqueUmaCasa.css" rel="stylesheet">
+</head>
+
+<body>
+    <secsion>
+        <h2 id="descricao">
+            Diga-nos o nome da casa de acolhimento que você deseja indicar e um endereço eletrônico, pode ser site, facebook, instagram, etc.
+        </h2>
+
+        <form class="dados">
+            <label htmlFor="nome">Nome</label>
+            <input asp-for="nome_casa" type="text" placeholder="Nome da casa de acolhimento.." />
+
+            <label htmlFor="Site">Site</label>
+            <input asp-for="site" type="text" placeholder="Site, facebook, instagram..." />
+
+            <label htmlFor="Estado">Estado</label>
+            <input asp-for="estado" type="text" placeholder="Estado da casa de acolhimento.." />
+
+            <label htmlFor="Site">Cidade</label>
+            <input asp-for="cidade" type="text" placeholder="Cidade da casa de acolhimento.." />
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </secsion>
+
+
+</body>

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<BeYou.Models.cadastroVagasEmprego>
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/vagasDeEmprego.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">Cargo</th>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">Salario</th>
+                    <th scope="col">Benefícios</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.ID</th>
+                        <td>@item.nome_empresa</td>
+                        <td>@item.cargo</td>
+                        <td>@item.cidade_UF</td>
+                        <td>R$ @item.salario</td>
+                        <td>@item.beneficios</td>
+                        <td><button type="button" class="btn btn-outline-secondary">Candidatar-me</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+
+
+</body>

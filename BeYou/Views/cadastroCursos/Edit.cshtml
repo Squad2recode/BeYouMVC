@@ -1,0 +1,47 @@
+﻿@model BeYou.Models.cadastroCursos
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/cadastre.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section>
+        <h2 id="descricao">
+            Editar
+        </h2>
+        <form class="dados" asp-action="Edit">
+            <label htmlFor="escola">Escola</label>
+            <input asp-for="nome_instituicao" type="text" placeholder="Nome da instituição.." />
+
+            <label htmlFor="curso">Curso</label>
+            <input asp-for="curso" type="text" placeholder="Curso disponível..." />
+
+            <label htmlFor="cidade">Cidade - UF</label>
+            <input asp-for="cidade_UF" type="text" placeholder="EX: Recife - PE" />
+
+            <label htmlFor="duracao">Duração</label>
+            <input asp-for="duracao" type="text" placeholder="Duração do curso.." />
+
+            <label htmlFor="turno">Turno</label>
+            <input asp-for="turno" type="text" placeholder="Turno do curso.." />
+
+
+            <input type="submit" value="Salvar" />
+
+
+            <div>
+                <a asp-action="verCursosIndicados" asp-controller="Home">Voltar</a>
+            </div>
+        </form>
+    </section>
+</body>
+
+
+        @section Scripts {
+        @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+        }

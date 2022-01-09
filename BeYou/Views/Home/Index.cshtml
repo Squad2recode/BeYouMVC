@@ -1,0 +1,135 @@
+﻿<head>
+
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+
+    <section class="container-1">
+        <div class="banner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/img/banner2.png" class="d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/banner1.png" class="d-block">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/banner3.png" class="d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="titulo">
+        <h1 class="display-3">Seja você e ponto.</h1>
+    </section>
+
+    <section class="container-2" id="container-2">
+        <div class="banner-2">
+            <div class="img-1">
+                <a asp-action="acolhimento" asp-controller="Home">
+                    <img src="~/img/abrigo.jpeg" alt="Acolhimento" width="295px"
+                         height="281px">
+                    <button type="button" class="btn btn-secondary" style="height: 40px;">Acolhimento</button>
+                </a>
+            </div>
+
+            <div class="img-2">
+                <a href="/capacitacaoCursos.html">
+                    <img src="~/img/projetoSocial.jpg" alt="Projetos"
+                         width="295px" height="281px">
+                    <button type="button" class="btn btn-secondary" style="height: 40px;">Projetos</button>
+                </a>
+            </div>
+
+            <div class="img-3">
+                <a href="https://www.gov.br/pt-br/servicos/denunciar-violacao-de-direitos-humanos" target="_blank">
+                    <img src="~/img/denuncie.png" alt="Denúncia" width="295px" height="281px">
+                    <button type="button" class="btn btn-danger" style="height: 40px;">Denuncie</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="by-news">
+        <h1 class="display-4">Informe-se!</h1>
+    </section>
+
+    <section class="container-3">
+        <div class="noticias">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe height="315" src="https://www.youtube.com/embed/EREoc40JBr8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe height="315" src="https://www.youtube.com/embed/sXcp2rMHC8o"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe height="315" src="https://www.youtube.com/embed/bgfEa7QYEcs"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+        <div id="ver-mais">
+            <a href="/HTML/informacoesLegais.html">
+                <button type="button" class="btn btn-secondary" style="height: 40px;">
+                    ver
+                    mais
+                </button>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="container-4">
+        <div class="mvv">
+            <div>
+                <a  asp-action="missaoVisaoValores" asp-controller="Home">
+                    <img src="~/img/missao.svg" alt="Missão" width="295px" height="281px">
+                    <button type="button" class="btn btn-secondary" style="height: 40px;">Missão</button>
+                </a>
+            </div>
+
+            <div>
+                <a asp-action="missaoVisaoValores" asp-controller="Home">
+                    <img src="~/img/visão.svg" alt="Visão" width="295px" height="281px">
+                    <button type="button" class="btn btn-secondary" style="height: 40px;">Visão</button>
+                </a>
+            </div>
+
+            <div>
+                <a asp-action="missaoVisaoValores" asp-controller="Home">
+                    <img src="~/img/valores.svg" alt="Valores" width="295px" height="281px">
+                    <button type="button" class="btn btn-secondary" style="height: 40px;">Valores</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>

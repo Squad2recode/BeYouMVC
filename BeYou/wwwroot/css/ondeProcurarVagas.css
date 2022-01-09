@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-group {
+    margin-top: 14%;
+    margin-bottom: 8%;
+}
+
+.card {
+    margin: 2%;
+}
+
+.card img {
+    height: 200px;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+@media screen and (max-width: 500px) {
+    .card-group {
+        margin-top: 45%;
+    }
+
+    .fim img {
+        width:10vw;
+      }
+
+}

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BeYou.Models.cadastroCursos>
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/verCandidatos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Escola</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Cidade - UF</th>
+                    <th scope="col">Duração</th>
+                    <th scope="col">Turno</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.ID</th>
+                        <td>@item.nome_instituicao</td>
+                        <td>@item.curso</td>
+                        <td>@item.cidade_UF</td>
+                        <td>@item.duracao</td>
+                        <td>@item.turno</td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="cadastroCursos" asp-route-id="@item.ID">EDITAR</a> | |
+                            <a asp-action="Delete" asp-controller="cadastroCursos" asp-route-id="@item.ID">DELETAR</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </section>
+
+</body>

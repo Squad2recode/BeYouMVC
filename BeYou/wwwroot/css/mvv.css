@@ -1,0 +1,28 @@
+.menu ul li {
+  font-weight: bold;
+}
+
+#s3 ul li {
+    text-decoration:none;
+}
+
+.mvv{
+    font-weight:bold;
+    margin-top:110px;
+    display:flex;
+    flex-direction:column;
+    justify-self:center;
+}
+
+.mvv h3 {
+    font-weight:bolder;
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 830px) {
+
+  
+}

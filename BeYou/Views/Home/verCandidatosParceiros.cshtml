@@ -1,0 +1,41 @@
+﻿@model IEnumerable<BeYou.Models.cadastroParceiros>
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/verCandidatos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Mensagem</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@item.ID</th>
+                        <td>@item.nome_parceiro</td>
+                        <td>@item.email</td>
+                        <td>@item.telefone</td>
+                        <td>@item.mensagem_parceiro</td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="cadastroParceiros" asp-route-id="@item.ID">EDITAR</a> ||
+                            <a asp-action="Delete" asp-controller="cadastroParceiros" asp-route-id="@item.ID">DELETAR</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </section>
+
+
+</body>

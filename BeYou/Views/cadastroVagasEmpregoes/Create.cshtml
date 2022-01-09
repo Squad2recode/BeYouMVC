@@ -1,0 +1,38 @@
+﻿@model BeYou.Models.cadastroVagasEmprego
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/cadastre.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <secsion>
+        <h2 id="descricao">
+            Cadastre uma vaga de emprego.
+        </h2>
+        <h5>
+            (As vagas cadastradas ficarão visíveis pro usuário na página "Vagas de emprego")
+        </h5>
+
+        <form class="dados" asp-action="Create" method="post">
+            <label htmlFor="empresa">Empresa</label>
+            <input asp-for="nome_empresa" type="text" placeholder="Nome da empresa contratante.." />
+
+            <label htmlFor="cargo">Cargo</label>
+            <input asp-for="cargo" type="text" placeholder="Cargo disponível..." />
+
+            <label htmlFor="cidade">Cidade - UF</label>
+            <input asp-for="cidade_UF" type="text" placeholder="EX: Belém - PA" />
+
+            <label htmlFor="salario">Salário</label>
+            <input asp-for="salario" type="text" placeholder="Salário oferecido.." />
+
+            <label htmlFor="beneficio">Benefícios</label>
+            <input asp-for="beneficios" type="text" placeholder="Benefícios oferecidos.." />
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </secsion>
+
+</body>

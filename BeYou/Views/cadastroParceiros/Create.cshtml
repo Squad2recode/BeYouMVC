@@ -1,0 +1,36 @@
+﻿@model BeYou.Models.cadastroParceiros
+
+<head>
+    <link rel="stylesheet" href="~/css/layout.css">
+    <link href="~/css/sejaUmParceiro.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <secsion>
+        <h4 id="descricao">
+            Possui ou representa uma empresa, escola, curso, etc?
+            <br>Possui Vagas disponíveis?
+            Tem ideias a compartilhar?
+            <br>Quer contribuir com a gente?
+            Precisamos de você !
+        </h4>
+
+        <form class="dados" asp-action="Create" method="post">
+            <label htmlFor="nome">Nome</label>
+            <input asp-for="nome_parceiro" type="text" placeholder="Digite seu nome ou o nome da empresa.." />
+
+            <label htmlFor="email" id="email-0">E-mail</label>
+            <input asp-for="email" type="text" placeholder="Digite seu email.." />
+
+            <label htmlFor="phone" id="telefone-0">Telefone</label>
+            <input asp-for="telefone" type="text" placeholder="(DDD) Telefone" />
+
+            <label htmlFor="mensagem">Como gostaria de nos ajudar?</label>
+            <textarea asp-for="mensagem_parceiro" placeholder="Diga-nos um pouco sobre suas ideias e aguarde nosso contato (Não demoraremos).." className="textArea"></textarea>
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </secsion>
+
+</body>

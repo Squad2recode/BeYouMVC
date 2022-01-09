@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Play", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-image: url(../img/BGCOMEIA2.svg);
+}
+
+section {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.13);
+    z-index: 2;
+}
+
+.logo {
+    max-width: 12%;
+    float: left;
+    padding-top: 1%;
+    padding-bottom: 1.1%;
+    margin-left: -7%;
+}
+
+nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-0 {
+    width: 85%;
+}
+
+.menu-0 {
+    margin-left: -6%;
+}
+
+    .menu-0 ul {
+        margin-left: 0;
+        text-align: center;
+    }
+
+        .menu-0 ul li {
+            display: inline;
+            position: relative;
+            cursor: pointer;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+            .menu-0 ul li a {
+                color: #000;
+                text-decoration: none;
+                font-style: bold;
+                display: inline-block;
+                transition: background 0.5s ease;
+                padding-top: 35px;
+                padding-bottom: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                font-style: bold;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+                background-color: rgba(0, 0, 0, 0.555);
+                border-radius: 0 0 10px 10px;
+            }
+
+                .menu-0 ul li a:hover {
+                    background-color: rgba(80, 79, 79, 0.315);
+                }
+
+        .menu-0 ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .menu-0 ul li:hover ul {
+            display: block;
+            text-align: center;
+        }
+
+        .menu-0 ul ul li a:hover {
+            background-color: #ffdc97;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .menu-0 ul ul {
+            width: 110%;
+            margin-left: -15% !important;
+        }
+
+            .menu-0 ul ul li {
+                font-size: 0.7em;
+                vertical-align: middle;
+            }
+
+                .menu-0 ul ul li a {
+                    background-color: rgba(0, 0, 0, 0.555);
+                    color: #fff;
+                    display: block;
+                }
+
+#menu-mobile {
+    display: none;
+}
+
+.menu-open {
+    display: none;
+}
+
+
+footer {
+    height: 45px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+}
+
+.fim {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1%;
+}
+
+    .fim img {
+        width: 4%;
+        margin: 15px;
+    }
+
+@media screen and (max-width: 500px) {
+
+    .menu-0 {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+        width: 157px;
+        height: 100px;
+    }
+
+    .menu-open {
+        display: block;
+        width: 20px;
+        height: 40px;
+        margin-left: 30vw;
+        margin-top: 6.5%;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    #linha {
+        margin-left: -13px;
+        width: 30px;
+        border-bottom: 3px solid rgb(7, 7, 7);
+    }
+
+    #linha2 {
+        margin-left: -13px;
+        width: 30px;
+        margin-top: 6px;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    #linha3 {
+        margin-left: -13px;
+        width: 30px;
+        margin-top: 6px;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    .logo {
+        max-width: 50%;
+        margin-top: 2%;
+    }
+
+    .overlay {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.7);
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .menu {
+        overflow: hidden;
+        background: rgba(0,0,0,.95);
+        padding: 40px 0 0 40px;
+        position: fixed;
+        top: 0;
+        right: -290px;
+        height: 100%;
+        z-index: 2;
+        transition: 0.5s;
+        width: 250px;
+    }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            width: 500px;
+            height: 95%;
+        }
+
+            .menu ul li a {
+                display: block;
+                border-bottom: 1px solid #131313;
+                padding: 6px 4px 6px 4px;
+                color: #989898;
+                transition: 0.3s;
+                text-decoration: none;
+            }
+
+        .menu a.menu-close {
+            padding: 8px 0 4px 23px;
+            color: #6B6B6B;
+            display: block;
+            margin: -30px 0 -10px -20px;
+            font-size: 35px;
+            text-decoration: none;
+        }
+
+    #titulo {
+        display: none;
+    }
+
+    .lista ul li {
+        margin-top: 1%;
+    }
+
+    .container-2 {
+        display: inline block;
+    }
+
+    .fim img {
+        margin: 5px;
+        margin-top: 15%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 850px) {
+
+    header {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .banner {
+        margin-top: 25%;
+    }
+
+    .menu-0 {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: flex;
+        width: 157px;
+        height: 100px;
+    }
+
+    .menu-open {
+        display: block;
+        width: 20px;
+        height: 40px;
+        margin-left: 55vw;
+        margin-top: 6.5%;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+    }
+
+    #linha {
+        margin-left: -13px;
+        width: 30px;
+        border-bottom: 3px solid rgb(7, 7, 7);
+    }
+
+    #linha2 {
+        margin-left: -13px;
+        width: 30px;
+        margin-top: 6px;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    #linha3 {
+        margin-left: -13px;
+        width: 30px;
+        margin-top: 6px;
+        border-bottom: 3px solid rgb(0, 0, 0);
+    }
+
+    .logo {
+        max-width: 30%;
+        margin-top: 1%;
+    }
+
+    .overlay {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.7);
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .menu {
+        overflow: hidden;
+        background: rgba(0,0,0,.95);
+        padding: 40px 0 0 40px;
+        position: fixed;
+        top: 0;
+        right: -290px;
+        height: 100%;
+        z-index: 2;
+        transition: 0.5s;
+        width: 250px;
+    }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: auto;
+            width: 500px;
+            height: 95%;
+        }
+
+            .menu ul li a {
+                display: block;
+                border-bottom: 1px solid #131313;
+                padding: 6px 4px 6px 4px;
+                color: #989898;
+                transition: 0.3s;
+                text-decoration: none;
+            }
+
+        .menu a.menu-close {
+            padding: 8px 0 4px 23px;
+            color: #6B6B6B;
+            display: block;
+            margin: -30px 0 -10px -20px;
+            font-size: 35px;
+            text-decoration: none;
+        }
+
+    #titulo {
+        display: none;
+    }
+
+    .lista ul li {
+        margin-top: 1%;
+    }
+
+    .img-1 img, .img-2 img, .img-3 img {
+        width: 25vw;
+        height: 20vh;
+    }
+
+    .mvv img {
+        width: 27vw;
+    }
+
+    .mvv button {
+        width: 15vw;
+    }
+
+    .fim img {
+        width: 6vw;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    header {
+        width: 100%;
+    }
+
+    .menu-0 {
+        font-size: 13.5px;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
