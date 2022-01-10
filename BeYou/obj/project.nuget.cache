@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YkdHeg+IdZMRp+a7jqlqYc4PD6WiZIUBv0oCW4S1OQVIIxcFQBTkTjhnG7EOF2iW/I2EbUj5HparnY4Af2ZHnA==",
+  "dgSpecHash": "kfbCfNLL8q/nyw/w1PjOg4aqghfh4E13t+kxGC+Ok69wCnD04W5SrkJHcSAJnkH8ERlQQCOejpBxSErCyC0jYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Remakker\\Desktop\\MVC BE YOU\\BeYou\\BeYou.csproj",
+  "projectFilePath": "C:\\Users\\Remakker\\Desktop\\MVC BE YOU\\BeYouMVC\\BeYou\\BeYou.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Remakker\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

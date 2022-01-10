@@ -1,0 +1,94 @@
+.card {
+    margin-top: 25%;
+}
+
+.table {
+    margin-top: 11%;
+    background-color: rgba(255, 255, 255, 0.466);
+    text-align: center;
+}
+
+td {
+    vertical-align: middle;
+}
+
+
+footer {
+    margin-top: 1%
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .table {
+      margin-top: 55%;
+      vertical-align: middle;
+      font-weight: bold;
+    }
+
+    .table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+    .table th {
+        vertical-align: middle;
+    }
+    
+    .fim img {
+      width: 8vw;
+    }
+
+    header {
+        width: 100%;
+      }
+    
+    footer {
+        width: 920px;
+        margin-left: -22%;
+        flex-shrink: 0;
+        margin-top: 30%;
+      }
+}
+
+@media screen and (min-width: 501px) and (max-width: 830px) {
+    .table {
+        margin-top: 30%;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+  
+      .table tbody {
+          width: auto;
+          position: relative;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+  
+      .table th {
+          vertical-align: middle;
+      }
+      
+      .fim img {
+        width: 5vw;
+      }
+  
+      header {
+          width: 100%;
+        }
+      
+      footer {
+          width: 985px;
+          margin-left: -22%;
+          flex-shrink: 0;
+          margin-top: 30%;
+        }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .table {
+        margin-top: 20%;
+    }
+}
